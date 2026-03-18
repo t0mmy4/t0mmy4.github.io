@@ -4,29 +4,16 @@ links:
   - title: Xu2n
     description: 红烧花园宝宝
     website: https://lxu2n.github.io/
-    image: https://avatars.githubusercontent.com/u/191954718?v=4
-menu:
-    main: 
-        weight: 4
-        params:
-            icon: link
-
-comments: true
----
-
----
-title: Links
-links:
+    image: https://avatars.githubusercontent.com/u/192428706?v=4
   - title: Suzen
     description: 尹哥
     website: https://yschen20.github.io/
     image: https://avatars.githubusercontent.com/u/191954718?v=4
 menu:
-    main: 
-        weight: 4
-        params:
-            icon: link
-
+  main:
+    weight: 4
+    params:
+      icon: link
 comments: true
 ---
 
