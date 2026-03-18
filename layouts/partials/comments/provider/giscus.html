@@ -1,0 +1,89 @@
+{{ $page := . }}
+{{ with .Site.Params.comments.giscus }}
+    {{ $langCode := lower (default $page.Site.Language.Lang $page.Site.Language.LanguageCode) }}
+    {{ $isZh := hasPrefix $langCode "zh" }}
+    {{ $title := cond $isZh "评论" "Discussion" }}
+    {{ $lightTheme := default "light" .lightTheme }}
+    {{ $darkTheme := default "dark_dimmed" .darkTheme }}
+    {{ $discussionURL := printf "https://github.com/%s/discussions" .repo }}
+
+    <section class="article-comments">
+        <div class="article-comments__inner">
+            <header class="article-comments__header">
+                <div>
+                    <p class="article-comments__eyebrow">GitHub Discussions</p>
+                    <h2 class="article-comments__title">{{ $title }}</h2>
+                </div>
+            </header>
+
+            <div class="article-comments__body">
+                <script
+                    src="https://giscus.app/client.js"
+                    data-repo="{{ .repo }}"
+                    data-repo-id="{{ .repoID }}"
+                    data-category="{{ .category }}"
+                    data-category-id="{{ .categoryID }}"
+                    data-mapping="{{ .mapping }}"
+                    data-strict="{{ .strict }}"
+                    data-reactions-enabled="{{ .reactionsEnabled }}"
+                    data-emit-metadata="{{ .emitMetadata }}"
+                    data-input-position="{{ .inputPosition }}"
+                    data-theme="{{ $lightTheme }}"
+                    data-lang="{{ .lang }}"
+                    data-loading="lazy"
+                    crossorigin="anonymous"
+                    async
+                ></script>
+
+                <noscript>
+                    <p class="article-comments__noscript">
+                        {{ if $isZh }}
+                            请启�?JavaScript 后查看评论，或前往
+                        {{ else }}
+                            Enable JavaScript to load comments, or continue on
+                        {{ end }}
+                        <a href="{{ $discussionURL }}" target="_blank" rel="noopener noreferrer">GitHub Discussions</a>.
+                    </p>
+                </noscript>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (() => {
+            const giscusOrigin = "https://giscus.app";
+            const lightTheme = {{ $lightTheme | jsonify | safeJS }};
+            const darkTheme = {{ $darkTheme | jsonify | safeJS }};
+
+            function setGiscusTheme(theme) {
+                const giscus = document.querySelector(".article-comments iframe.giscus-frame");
+                if (!giscus) return;
+
+                giscus.contentWindow.postMessage(
+                    {
+                        giscus: {
+                            setConfig: {
+                                theme: theme,
+                            },
+                        },
+                    },
+                    giscusOrigin
+                );
+            }
+
+            function syncGiscusTheme() {
+                const scheme = document.documentElement.dataset.scheme === "light" ? lightTheme : darkTheme;
+                setGiscusTheme(scheme);
+            }
+
+            window.addEventListener("message", (event) => {
+                if (event.origin !== giscusOrigin) return;
+                syncGiscusTheme();
+            });
+
+            window.addEventListener("onColorSchemeChange", syncGiscusTheme);
+            window.addEventListener("load", syncGiscusTheme, { once: true });
+        })();
+    </script>
+{{ end }}
+
