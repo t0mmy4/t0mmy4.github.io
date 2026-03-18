@@ -59,11 +59,12 @@ SortBy              = "default"
     category = "Announcements"
     categoryID = "DIC_kwDORqFj0s4C4q7E"
     mapping = "pathname"
-    strict = "0"
-    reactionsEnabled = "1"
-    emitMetadata = "0"
+    strict = 0
+    reactionsEnabled = 1
+    emitMetadata = 0
     inputPosition = "bottom"
-    theme = "preferred_color_scheme"
+    lightTheme = "light"
+    darkTheme = "dark_dimmed"
     lang = "zh-CN"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
