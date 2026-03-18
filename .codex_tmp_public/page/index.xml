@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on t0mmy4</title>
+        <link>https://t0mmy4.github.io/page/</link>
+        <description>Recent content in Pages on t0mmy4</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://t0mmy4.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Archives</title>
+            <link>https://t0mmy4.github.io/archives/</link>
+            <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+            <guid>https://t0mmy4.github.io/archives/</guid>
+            <description></description>
+        </item><item>
+            <title>About</title>
+            <link>https://t0mmy4.github.io/about/</link>
+            <pubDate>Sun, 19 Sep 1999 15:07:07 +0800</pubDate>
+            <guid>https://t0mmy4.github.io/about/</guid>
+            <description>&lt;p&gt;我的自留地。&lt;/p&gt;&#xA;</description>
+        </item><item>
+            <title>Links</title>
+            <link>https://t0mmy4.github.io/links/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>https://t0mmy4.github.io/links/</guid>
+            <description>&lt;!-- To use this feature, add `links` section to frontmatter.&#xD;&#xA;&#xD;&#xA;This page&#39;s frontmatter:&#xD;&#xA;&#xD;&#xA;```yaml&#xD;&#xA;links:&#xD;&#xA;  - title: GitHub&#xD;&#xA;    description: GitHub is the world&#39;s largest software development platform.&#xD;&#xA;    website: https://github.com&#xD;&#xA;    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&#xD;&#xA;  - title: TypeScript&#xD;&#xA;    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&#xD;&#xA;    website: https://www.typescriptlang.org&#xD;&#xA;    image: ts-logo-128.jpg&#xD;&#xA;```&#xD;&#xA;&#xD;&#xA;`image` field accepts both local and external images. --&gt;</description>
+        </item><item>
+            <title>Search</title>
+            <link>https://t0mmy4.github.io/search/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>https://t0mmy4.github.io/search/</guid>
+            <description></description>
+        </item></channel>
+</rss>
