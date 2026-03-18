@@ -14,13 +14,13 @@ SortBy              = "default"
     customText = ""
 
 [dateFormat]
-    published   = ":date_full"
-    lastUpdated = ":date_full"
+    published   = "2006-01-02"
+    lastUpdated = "2006-01-02"
 
 [sidebar]
-    emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar   = "img/avatar.png"
+    emoji    = ""
+    subtitle = "Be brave."
+    avatar   = "img/avatar.jpg"
 
 [article]
     headingAnchor = false

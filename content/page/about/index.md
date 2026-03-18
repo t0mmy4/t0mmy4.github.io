@@ -6,7 +6,12 @@ image:
 math: 
 license: 
 comments: true
-draft: true
+draft: false
+menu:
+    main:
+        weight: 5
+        params:
+            icon: user
 build:
     list: always    # Change to "never" to hide the page from the list
 ---
