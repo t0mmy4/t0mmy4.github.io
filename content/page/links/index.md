@@ -1,20 +1,20 @@
 ---
 title: Links
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: Xu2n
+    description: 红烧花园宝宝
+    website: https://lxu2n.github.io/
+    image: https://lxu2n.github.io/image/1.png
 menu:
     main: 
         weight: 4
         params:
             icon: link
 
-comments: false
+comments: true
 ---
 
-To use this feature, add `links` section to frontmatter.
+<!-- To use this feature, add `links` section to frontmatter.
 
 This page's frontmatter:
 
@@ -30,4 +30,4 @@ links:
     image: ts-logo-128.jpg
 ```
 
-`image` field accepts both local and external images.
+`image` field accepts both local and external images. -->
