@@ -1,7 +1,7 @@
 ---
 title: "Init"
 description: 
-date: 1999-99-99T99:99:99+99:99
+date: 1999-12-19T23:59:59+59:59
 image: 
 math: 
 license: 

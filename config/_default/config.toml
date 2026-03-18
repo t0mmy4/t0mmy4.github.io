@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl      = "https://t0mmy4.github.io/"
 languageCode = "zh-cn"
-title        = "Hugo Theme Stack Starter"
+title        = "t0mmy4"
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
