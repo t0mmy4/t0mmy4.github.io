@@ -9,6 +9,10 @@ links:
     description: 尹哥
     website: https://yschen20.github.io/
     image: https://avatars.githubusercontent.com/u/191954718?v=4
+  - title: misaki
+    description: 鲜虾鱼板面
+    website: https://misaki.wiki/
+    image: https://misakiimg.oss-cn-shanghai.aliyuncs.com/img/misaki.jpg
 menu:
   main:
     weight: 4
